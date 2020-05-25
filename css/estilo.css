@@ -1,19 +1,20 @@
 /* Formatação Geral  */
 body {
 
-	font-family: "Gloria+Hallelujah", "Amatic+SC", cursive;
+	font-family: "Gloria+Hallelujah", "Amatic+SC", sans-serif;
+	background-color: #e5cbab;
 }
 
 h1, h2, h3{
 
 	margin: 0;
-	font-family: Caveat, "Amatic+SC", cursive;
+	font-family: Caveat, "Amatic+SC", sans-serif;
 	font-weight: 700;
 }
   
 p{
 
-	font-family: "Amati+SC", "Gloria+Hallelujah", cursive;
+	font-family: "Amati+SC", "Gloria+Hallelujah", sans-serif;
 }
 
 .container{
@@ -149,11 +150,58 @@ header p{
 #especialidades img{
 	margin: 10px 0;
 }
-
 #especialidades h2{
-	font-size: 2em;
+	font-size: 2.5em;
+}
+#especialidades h3{
+	font-size: 1.5em;
 }
 
+#competencias{
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#competencias h2{
+
+	margin-bottom: 20px;
+	margin-top: 10px;
+	font-size: 2em;
+	text-align: center;
+}
+
+#competencias h3,p{
+
+	margin-bottom: 20px;
+	margin-top: 10px;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+#competencias a{
+	text-decoration: none;
+}
+
+#competencias img{
+	width: 100%;
+	margin-bottom: 0;
+}
+
+#competencias .comp p{
+	border-left: 2px dashed #533d32;
+	border-right: 2px dashed #533d32;
+	border-bottom: 2px dashed #533d32;
+	margin-top: 0;
+	font-family: "Amati+SC", "Gloria+Hallelujah", sans-serif; 
+	padding-right: 15px;
+	padding-left: 15px;
+	line-height: 1.5;
+}
 
 @media screen and (min-width: 768px){
 /*Cabeçalho ou barara de navegação*/
@@ -217,7 +265,24 @@ header{
 	padding: 0 10px;
 }
 
+/*competencias*/
+
+#competencias {
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+#competencias h2,h3{
+	width: 100%;
+	text-align: center;
+}
 
 
-
+#competencias .comp{
+	width: 50%;
+	text-align: center;
+	position: center;
+	margin-left: auto;
+    margin-right: auto;
+    
+}
 
