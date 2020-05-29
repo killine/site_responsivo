@@ -185,6 +185,7 @@ header p{
 
 #competencias a{
 	text-decoration: none;
+	color: #533d32;
 }
 
 #competencias img{
@@ -202,6 +203,64 @@ header p{
 	padding-left: 15px;
 	line-height: 1.5;
 }
+
+/*Site trab*/
+
+#trab{
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+#trab h2{
+
+	margin-bottom: 20px;
+	margin-top: 10px;
+	font-size: 2em;
+	text-align: center;
+}
+
+#trab h3,p{
+
+	margin-bottom: 20px;
+	margin-top: 10px;
+	font-size: 1em;
+	text-align: center;
+}
+#trab a{
+	text-decoration: none;
+}
+
+#trab img{
+	width: 100%;
+	margin-bottom: 0;
+}
+
+#trab .si p{
+	border-left: 2px dashed #e5cbab;
+	border-right: 2px dashed #e5cbab;
+	border-bottom: 2px dashed #e5cbab;
+	margin-top: 0;
+	font-family: "Amati+SC", "Gloria+Hallelujah", sans-serif; 
+	padding-right: 15px;
+	padding-left: 15px;
+	line-height: 1.5;
+}
+
+.si img:hover{top:-5px;
+	box-shadow:0 2px 2px #533d32;
+}
+#siteg{position:relative}
+
+.si img{
+	border-left: 2px dashed #e5cbab;
+	border-right: 2px dashed #e5cbab;
+	border-bottom: 2px dashed #e5cbab;
+}
+
 
 @media screen and (min-width: 768px){
 /*Cabeçalho ou barara de navegação*/
@@ -285,4 +344,22 @@ header{
     margin-right: auto;
     
 }
+
+/*site trab*/
+
+#trab{
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+#trab h2,h3{
+	width: 100%;
+	text-align: center;
+}
+
+
+#trab .si{
+	width: 33.3333333333%;
+	text-align: center;
+}
+
 
