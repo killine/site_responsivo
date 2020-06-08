@@ -1,20 +1,20 @@
 /* Formatação Geral  */
 body {
 
-	font-family: "Gloria+Hallelujah", "Amatic+SC", sans-serif;
+	font-family: "Gloria+Hallelujah", "Amatic+SC", cursive;
 	background-color: #e5cbab;
 }
 
 h1, h2, h3{
 
 	margin: 0;
-	font-family: Caveat, "Amatic+SC", sans-serif;
+	font-family: Caveat, "Amatic+SC", cursive;
 	font-weight: 700;
 }
   
 p{
 
-	font-family: "Amati+SC", "Gloria+Hallelujah", sans-serif;
+	font-family: "Amati+SC", "Gloria+Hallelujah", cursive;
 }
 
 .container{
@@ -130,6 +130,7 @@ header p{
 	align-items: center;
 	position: relative;
 	margin: 0 auto;
+	color: #533d32;
 
 }   
 
@@ -198,10 +199,11 @@ header p{
 	border-right: 2px dashed #533d32;
 	border-bottom: 2px dashed #533d32;
 	margin-top: 0;
-	font-family: "Amati+SC", "Gloria+Hallelujah", sans-serif; 
+	font-family: "Amati+SC", "Gloria+Hallelujah", cursive; 
 	padding-right: 15px;
 	padding-left: 15px;
 	line-height: 1.5;
+	color: #533d32;
 }
 
 /*Site trab*/
@@ -244,7 +246,7 @@ header p{
 	border-right: 2px dashed #e5cbab;
 	border-bottom: 2px dashed #e5cbab;
 	margin-top: 0;
-	font-family: "Amati+SC", "Gloria+Hallelujah", sans-serif; 
+	font-family: "Amati+SC", "Gloria+Hallelujah", cursive; 
 	padding-right: 15px;
 	padding-left: 15px;
 	line-height: 1.5;
@@ -261,6 +263,136 @@ header p{
 	border-bottom: 2px dashed #e5cbab;
 }
 
+/*hobby*/
+
+#hobby{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	background-color: #533d32;
+	color: #e5cbab;
+}
+#hobby{
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+#hobby h2{
+
+	margin-bottom: 20px;
+	margin-top: 10px;
+	font-size: 2em;
+	text-align: center;
+}
+
+#hobby h3,p{
+
+	margin-bottom: 20px;
+	margin-top: 10px;
+	font-size: 1.5em;
+	text-align: center;
+}
+#hobby a{
+	text-decoration: none;
+}
+
+#hobby img{
+	width: 100%;
+	margin-bottom: 0;
+}
+.hobby p{
+	border-left: 2px dashed #e5cbab;
+	border-right: 2px dashed #e5cbab;
+	border-bottom: 2px dashed #e5cbab;
+	margin-top: 0;
+	font-family: "Amati+SC", "Gloria+Hallelujah", cursive; 
+	padding-right: 15px;
+	padding-left: 15px;
+	line-height: 1.5;
+}
+
+#gosto{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+#gosto h2{
+	margin-top: 20px;
+	font-size: 2em;
+	color: #533d32;
+}
+
+.desenho img{
+	width: 60%
+}
+.desenho{
+	float: left;
+	width: 50%;
+}
+.text{
+	float: right;
+	width: 50%;
+	color: #533d32;
+}
+
+/*Contato*/
+#contato{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+}
+
+#contato h2{
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	font-size: 2.5em;
+	text-align: center;
+	color: #533d32;
+}
+
+#contato > h3{
+	margin-bottom: 20px;
+	font-size: 2em;
+	text-align: center;
+	color: #533d32;
+
+}
+
+#contato a{
+	text-decoration: none;
+	font-family: "Amati+SC", "Gloria+Hallelujah",cursive; 
+	text-align: center;
+	text-decoration: none;
+	color: #533d32;
+	font-size: 1em;
+}
+
+}
+#contato img{
+	margin: 10px 0;
+}
+
+footer {
+	text-align: center;
+	width: 100%;
+	background-color: #554838;
+	color: #e5cbab;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
 
 @media screen and (min-width: 768px){
 /*Cabeçalho ou barara de navegação*/
@@ -363,3 +495,54 @@ header{
 }
 
 
+/*hobby*/
+#hobby{
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+#hobby h2,h3{
+	width: 100%;
+	text-align: center;
+}
+
+.hobby{
+	width: 33.3333333333%;
+	text-align: center;
+}
+
+#gosto{
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	height: 90vh;
+	justify-content:center;
+	min-height: 80vh;
+}
+#gosto h2{
+	text-align: center;
+	width: 100%;
+}
+
+#gosto div{
+	flex-grow: 1;
+	flex-basis: 300px;
+	padding: 0 30px;
+}
+
+/*Contato*/
+#contato{
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	max-width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	max-height: 40vh;
+	width: 100%;
+}
+
+#contato h2,
+#contato p{
+width: 100%;
+text-align: center;
+}
