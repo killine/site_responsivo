@@ -77,12 +77,16 @@ header {
 	padding: 30px;
 }
 
+header h1{
+	font-size: 1.4em;
+}
 header p{
 
 	margin-bottom: 2em;
 	font-size: 1.7em;
 
 }
+
 
 .botao{
 
@@ -119,6 +123,7 @@ header p{
 .texto{
 	float: right;
 	width: 50%;
+	font-size: 1.2em;
 }
 
 /*Especialidades*/
@@ -194,7 +199,7 @@ header p{
 	margin-bottom: 0;
 }
 
-#competencias .comp p{
+#competencias .compe p{
 	border-left: 2px dashed #533d32;
 	border-right: 2px dashed #533d32;
 	border-bottom: 2px dashed #533d32;
@@ -206,9 +211,7 @@ header p{
 	color: #533d32;
 }
 
-/*Site trab*/
-
-#trab{
+#trabalho{
 
 	display: flex;
 	flex-direction: column;
@@ -216,8 +219,10 @@ header p{
 	padding-top: 20px;
 	margin-left: 20px;
 	margin-right: 20px;
+	color: #533d32;
 }
-#trab h2{
+
+#trabalho h2{
 
 	margin-bottom: 20px;
 	margin-top: 10px;
@@ -225,26 +230,28 @@ header p{
 	text-align: center;
 }
 
-#trab h3,p{
+#trabalho h3,p{
 
 	margin-bottom: 20px;
 	margin-top: 10px;
 	font-size: 1em;
 	text-align: center;
 }
-#trab a{
+
+#trabalho a{
 	text-decoration: none;
+	color: #533d32;
 }
 
-#trab img{
+#trabalho img{
 	width: 100%;
 	margin-bottom: 0;
 }
 
-#trab .si p{
-	border-left: 2px dashed #e5cbab;
-	border-right: 2px dashed #e5cbab;
-	border-bottom: 2px dashed #e5cbab;
+#trabalho .comp p{
+	border-left: 2px dashed #533d32;
+	border-right: 2px dashed #533d32;
+	border-bottom: 2px dashed #533d32;
 	margin-top: 0;
 	font-family: "Amati+SC", "Gloria+Hallelujah", cursive; 
 	padding-right: 15px;
@@ -252,12 +259,12 @@ header p{
 	line-height: 1.5;
 }
 
-.si img:hover{top:-5px;
+.trab img:hover{top:-5px;
 	box-shadow:0 2px 2px #533d32;
 }
 #siteg{position:relative}
 
-.si img{
+.trab img{
 	border-left: 2px dashed #e5cbab;
 	border-right: 2px dashed #e5cbab;
 	border-bottom: 2px dashed #e5cbab;
@@ -269,21 +276,11 @@ header p{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	text-align: center;
 	padding-top: 20px;
 	margin-left: 20px;
 	margin-right: 20px;
-	background-color: #533d32;
-	color: #e5cbab;
-}
-#hobby{
-
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding-top: 20px;
-	margin-left: 20px;
-	margin-right: 20px;
+	width: 100%;
+	color: #533d32;
 }
 #hobby h2{
 
@@ -292,57 +289,18 @@ header p{
 	font-size: 2em;
 	text-align: center;
 }
-
-#hobby h3,p{
-
-	margin-bottom: 20px;
-	margin-top: 10px;
-	font-size: 1.5em;
-	text-align: center;
-}
-#hobby a{
-	text-decoration: none;
-}
-
-#hobby img{
-	width: 100%;
-	margin-bottom: 0;
-}
-.hobby p{
-	border-left: 2px dashed #e5cbab;
-	border-right: 2px dashed #e5cbab;
-	border-bottom: 2px dashed #e5cbab;
-	margin-top: 0;
-	font-family: "Amati+SC", "Gloria+Hallelujah", cursive; 
-	padding-right: 15px;
-	padding-left: 15px;
-	line-height: 1.5;
-}
-
-#gosto{
-	display: flex;
-	flex-direction: column;
+.hobby{
+	width: 80%;
 	align-items: center;
 	text-align: center;
 }
-#gosto h2{
-	margin-top: 20px;
-	font-size: 2em;
-	color: #533d32;
+
+.hobby h3{
+	font-size: 1.5em;
+	margin-top: 30px;
+	margin-bottom: 14px;
 }
 
-.desenho img{
-	width: 60%
-}
-.desenho{
-	float: left;
-	width: 50%;
-}
-.text{
-	float: right;
-	width: 50%;
-	color: #533d32;
-}
 
 /*Contato*/
 #contato{
@@ -355,19 +313,19 @@ header p{
 
 #contato h2{
 	margin-left: 20px;
-	margin-right: 20px;
+	margin-width: 20px;
 	margin-bottom: 20px;
 	margin-top: 20px;
-	font-size: 2.5em;
+	font-size: 2em;
 	text-align: center;
 	color: #533d32;
 }
 
-#contato > h3{
+#contato > p{
 	margin-bottom: 20px;
-	font-size: 2em;
-	text-align: center;
+	font-size: 1.2em;
 	color: #533d32;
+	text-align: center;
 
 }
 
@@ -468,65 +426,31 @@ header{
 }
 
 
-#competencias .comp{
+#competencias .compe{
 	width: 50%;
 	text-align: center;
 	position: center;
 	margin-left: auto;
     margin-right: auto;
     
+    
 }
 
-/*site trab*/
-
-#trab{
+/*trabalho*/
+#trabalho {
 	flex-direction: row;
 	flex-wrap: wrap;
 }
-#trab h2,h3{
+#trabalho h2,h3{
 	width: 100%;
 	text-align: center;
 }
 
 
-#trab .si{
+#trabalho .comp{
 	width: 33.3333333333%;
 	text-align: center;
-}
-
-
-/*hobby*/
-#hobby{
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-#hobby h2,h3{
-	width: 100%;
-	text-align: center;
-}
-
-.hobby{
-	width: 33.3333333333%;
-	text-align: center;
-}
-
-#gosto{
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-items: center;
-	height: 90vh;
-	justify-content:center;
-	min-height: 80vh;
-}
-#gosto h2{
-	text-align: center;
-	width: 100%;
-}
-
-#gosto div{
-	flex-grow: 1;
-	flex-basis: 300px;
-	padding: 0 30px;
+    
 }
 
 /*Contato*/
